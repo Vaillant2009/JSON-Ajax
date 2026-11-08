@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КіноПошук</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>КіноПошук</h1>
+
+        <form id="searchForm">
+            <input type="text" id="movieTitle" placeholder="Введіть назву фільму" required>
+            <select id="movieType">
+                <option value="">Усі типи</option>
+                <option value="movie">Фільм</option>
+                <option value="series">Серіал</option>
+                <option value="episode">Епізод</option>
+            </select>
+            <button type="submit">Пошук</button>
+        </form>
+
+        <div id="message" role="status"></div>
+        <div id="movieList"></div>
+        <div id="pagination"></div>
+        <div id="movieDetails"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
